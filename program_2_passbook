@@ -1,0 +1,46 @@
+#include <stdio.h>
+int main()
+{
+    int num ;
+    printf("Test Data");
+    printf("Input the Amount   :");
+    scanf("%d", &num);
+    printf("Expected Output:\n\n\n");
+
+    if(num>0)
+    {
+    int note100 = num/100;
+    printf("%d Note(s) of 100\n",note100);
+    num = num % 100;
+    
+    
+    int note50 = num/50;
+    printf("%d Note(s) of 50\n",note50);
+    num = num % 50;
+    
+    int note20 = num/20;
+    printf("%d Note(s) of 20\n",note20);
+    num = num % 20;
+    
+    int note10 = num/10;
+    printf("%d Note(s) of 10\n",note10);
+    num = num % 10;
+    
+    int note5 = num/5;
+    printf("%d Note(s) of 5\n",note5);
+    num = num % 5;
+    
+    int note2 = num/2;
+    printf("%d Note(s) of 2\n",note2);
+    num = num % 2;
+    
+    int note1 = num/1;
+    printf("%d Note(s) of 1\n",note1);
+    
+    }
+
+}    
+
+       
+
+ 
