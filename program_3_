@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main(){
+    int amount, total;
+
+    printf("Input the amount: ");
+    scanf("%d",&amount);
+
+    int note100 = amount/100;
+    total = amount - (note100*100);
+
+    int note50 = total/50;
+    total = total - (note50*50);
+
+    int note20 = total/20;
+    total = total - (note20*20);
+
+    int note10 = total/10;
+    total = total - (note10*10);
+
+     int note5 = total/5;
+    total = total - (note5*5);
+
+     int note2 = total/2;
+    total = total - (note2*2);
+
+     int note1 = total/1;
+    total = total - (note1*1);
+
+    printf("There are:\n%d Note(s) of 100.00\n%d Note(s) of 50.00\n%d Note(s) of 20.00\n%d Note(s) of 10.00\n%d Note(s) of 5.00\n%d Note(s) of 2.00\n%d Note(s) of 1.00\n", note100,note50,note20,note10,note5,note2,note1);
+    return 0;
+}
