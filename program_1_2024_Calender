@@ -1,0 +1,124 @@
+#include <stdio.h>
+int main()
+{
+    int si, ei, num, a = 1, value = 0;
+    printf("2024 Calendar Templates\n");
+    printf("Enter the month you have:");
+    printf("\n");
+    printf("\n");
+    scanf("%d", &num);
+    switch (num)
+    {
+    case 1:
+        si = 2;
+        ei = 31;
+        break;
+    case 2:
+        si = 5;
+        ei = 29;
+        break;
+    case 3:
+        si = 6;
+        ei = 31;
+        break;
+    case 4:
+        si = 2;
+        ei = 30;
+        break;
+    case 5:
+        si = 4;
+        ei = 31;
+        break;
+    case 6:
+        si = 7;
+        ei = 30;
+        break;
+    case 7:
+        si = 2;
+        ei = 31;
+        break;
+    case 8:
+        si = 5;
+        ei = 31;
+        break;
+    case 9:
+        si = 1;
+        ei = 30;
+        break;
+    case 10:
+        si = 3;
+        ei = 31;
+        break;
+    case 11:
+        si = 6;
+        ei = 30;
+        break;
+    case 12:
+        si = 1;
+        ei = 31;
+        break;
+    default:
+        printf("Invalid input");
+        break;
+    }
+    printf("\t\t\tMonth %d 2024:", num);
+    printf("\n");
+    printf("\n");
+    printf("       SUN      MON     TUE     WED     THU    FRI     SAT\n");
+    printf("\n");
+
+    switch (si)
+    {
+    case 1:
+
+        printf("\t%d", a);
+        break;
+
+    case 2:
+
+        printf("\t\t%d\t", a);
+        break;
+
+    case 3:
+
+        printf("\t\t\t%d\t", a);
+        break;
+
+    case 4:
+
+        printf("\t\t\t\t%d\t", a);
+        break;
+
+    case 5:
+
+        printf("\t\t\t\t\t%d\t", a);
+        break;
+
+    case 6:
+
+        printf("\t\t\t\t\t\t%d\t", a);
+        break;
+
+    case 7:
+
+        printf("\t\t\t\t\t\t\t%d\t", a);
+        break;
+    }
+
+    int h = 8 - si;
+    for (int i = 2; i <= h; i++)
+    {
+        printf("%d\t", i);
+    }
+    printf("\n");
+    for (int i = h + 1; i <= ei; i++)
+    {
+        printf("\t%d", i);
+        value++;
+        if (value == 7)
+        {
+            printf("\n");
+            value = 0;
+        }
+    }
+}
